@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinterest Card</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2393590cb4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="pinterest-card">
         <div class="pinterest-card__overlay"></div>
         <img src="https://i.pinimg.com/564x/63/8e/e6/638ee654db432879faa49dc3fc43f32c.jpg" alt="pirate">
-        <div class="pinterest-card__more">. . .</div>
         <div class="pinterest-card__FlyUp">    
-            <div class="pinterest-card__save">Save</div>
+            <div class="pinterest-card__save">
+                <span>Save</span>
+            </div>
         </div>
         <div class="pinterest-card__FlyDown">
-            <div class="pinterest-card__author">Mantas</div>
-            <div class="pinterest-card__DL"><img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-file-download-icon-image_1344466.jpg" alt="download"></div>
+            <div class="pinterest-card__author"><i class="fa-solid fa-arrow-up-right"></i> 
+                <span style="    position: relative;
+                font-weight: bold;
+                font-size: large;
+                top: 25px;
+                left: 36px;">Mantas</span>
+            </div>
+            <div class="pinterest-card__DL"><i class="fa-solid fa-download"></i></div>
+            <div class="pinterest-card__more"><i class="fa-solid fa-ellipsis"></i></div>
         </div>
     </div>
 </body>
