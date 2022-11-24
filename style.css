@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.pinterest-card{
+    width: 468px;
+    height: 470px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25vh;
+    position:relative;
+    border-radius: 20px;
+}
+.pinterest-card img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+}
+.pinterest-card__overlay{
+    top: 0;
+    right:0;
+    bottom: 0;
+    left:0;
+    background-color:black;
+}
+.pinterest-card__save{
+    background-color: red;
+    border-radius:40px;
+    overflow:hidden;
+}
