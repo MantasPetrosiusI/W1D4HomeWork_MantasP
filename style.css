@@ -1,18 +1,25 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .pinterest-card{
-    width: 468px;
-    height: 470px;
+    user-select:none;
+    width: 465px;
+    height: 618px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 25vh;
-    overflow:hidden;
-    position:relative;
-    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 38px;
     z-index: -1;
+    cursor:auto;
+    transition: transform 3s;
 }
+.pinterest-card:hover {
+    transform: scale(1.1);
+  }
 .pinterest-card img{
     
     width: 100%;
@@ -21,50 +28,62 @@ body{
 }
 .pinterest-card__overlay{
     position: absolute;
-    width: 468px;
-    height: 470px;
+    width: 465px;
+    height: 618px;
     top: 0;
     right:0;
     bottom: 0;
     left:0;
     background-color:black;
-    opacity: 15%;
+    opacity: 0%;
 }
 .pinterest-card__save{
     position: relative;
     background-color: red;
     border-radius: 40px;
-    bottom: 459px;
-    left: 359px;
-    width: 95px;
-    height: 54px;
+    bottom: 712px;
+    left: 308px;
+    width: 137px;
+    height: 90px;
 }
 .pinterest-card__save span{
     position: relative;
-    top: 11px;
-    left: 23px;
+    top: 23px;
+    left: 26px;
     font-weight: bold;
-    font-size: 18pt;
+    font-size: 27pt;
     color: white;
 }
 .pinterest-card__author{
     position: relative;
     background-color: white;
     border-radius: 40px;
-    bottom: 150px;
-    left: 16px;
-    width: 147px;
-    height: 72px;
+    bottom: 97px;
+    left: 22px;
+    width: 223px;
+    height: 56px;
     opacity: 87%;
+}
+.fa-location-arrow{
+    position: relative;
+    top: 18px;
+    left: 22px;
+}
+.pinterest-card__author span{
+    position: relative;
+    font-weight: bold;
+    font-size: larger;
+    top: 19px;
+    left: 24px;
 }
 .pinterest-card__DL{
     position: relative;
     background-color: white;
     border-radius: 40px;
-    bottom: 220px;
-    left: 171px;
-    width: 75px;
-    height: 72px;
+    bottom: 154px;
+    left: 290px;
+    width: 58px;
+    height: 59px;
     opacity: 87%;
 
 }
@@ -72,14 +91,19 @@ body{
     position: relative;
     background-color: white;
     border-radius: 40px;
-    bottom: 288px;
-    left: 359px;
-    width: 75px;
-    height: 72px;
+    bottom: 212px;
+    left: 383px;
+    width: 58px;
+    height: 59px;
     opacity: 87%;
 }
-.fa-solid{
-position: relative;
-left: 29px;
-top: 23px;
+.fa-download{
+    position: relative;
+    left: 14px;
+    top: 19px;
+}
+.fa-ellipsis {
+    position: relative;
+    left: 17px;
+    top: 21px;
 }
