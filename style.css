@@ -7,44 +7,55 @@ body{
     user-select:none;
     width: 465px;
     height: 618px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 25vh;
-    overflow: hidden;
-    position: relative;
-    border-radius: 38px;
+    margin-left: 75vh;
+    margin-top: 18vh;
+    position: absolute;
     z-index: -1;
     cursor:auto;
-    transition: transform 3s;
+    border-radius: 20px;
+    transition: box-shadow 250ms, transform 1s;
 }
 .pinterest-card:hover {
-    transform: scale(1.1);
+    box-shadow: 0 20px 60px rgb(0 0 0 / 50%);
+    transform: scale(1.05);
   }
 .pinterest-card img{
     
     width: 100%;
     height:100%;
     object-fit:cover;
+    border-radius: 20px;
 }
 .pinterest-card__overlay{
     position: absolute;
     width: 465px;
     height: 618px;
+    border-radius: 20px;
     top: 0;
     right:0;
     bottom: 0;
     left:0;
     background-color:black;
     opacity: 0%;
+    transition: opacity 650ms;
+}
+.pinterest-card:hover .pinterest-card__overlay{
+    opacity: 60%;
 }
 .pinterest-card__save{
     position: relative;
     background-color: red;
     border-radius: 40px;
-    bottom: 712px;
+    bottom: 621px;
     left: 308px;
     width: 137px;
     height: 90px;
+    opacity: 0%;
+    transition: opacity 1s, bottom 600ms;
+}
+.pinterest-card:hover .pinterest-card__save{
+    opacity:100%;
+    bottom: 592px;
 }
 .pinterest-card__save span{
     position: relative;
@@ -58,11 +69,17 @@ body{
     position: relative;
     background-color: white;
     border-radius: 40px;
-    bottom: 97px;
+    bottom: 154px;
     left: 22px;
     width: 223px;
     height: 56px;
     opacity: 87%;
+    opacity: 0%;
+    transition: opacity 1s, bottom 600ms;
+}
+.pinterest-card:hover .pinterest-card__author{
+    opacity:100%;
+    bottom: 189px;
 }
 .fa-location-arrow{
     position: relative;
@@ -80,22 +97,31 @@ body{
     position: relative;
     background-color: white;
     border-radius: 40px;
-    bottom: 154px;
+    bottom: 213px;
     left: 290px;
     width: 58px;
     height: 59px;
-    opacity: 87%;
-
+    opacity: 0%;
+    transition: opacity 1s, bottom 600ms;
+}
+.pinterest-card:hover .pinterest-card__DL{
+    opacity:100%;
+    bottom: 245px;
 }
 .pinterest-card__more{
     position: relative;
     background-color: white;
     border-radius: 40px;
-    bottom: 212px;
+    bottom: 272px;
     left: 383px;
     width: 58px;
     height: 59px;
-    opacity: 87%;
+    opacity: 0%;
+    transition: opacity 1s, bottom 600ms;
+}
+.pinterest-card:hover .pinterest-card__more{
+    opacity:100%;
+    bottom: 304px;
 }
 .fa-download{
     position: relative;
@@ -104,6 +130,6 @@ body{
 }
 .fa-ellipsis {
     position: relative;
-    left: 17px;
+    left: 14px;
     top: 21px;
 }
